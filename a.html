@@ -1,0 +1,92 @@
+<link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Open+Sans"
+/>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<style>
+    body {
+        background: linear-gradient(
+            150deg,
+            #f0ebe3 0%,
+            #e4dccf 66%,
+            #748da6 85%
+        );
+    }
+
+    h1 {
+        color: white;
+        text-align: center;
+    }
+
+    p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+    }
+
+    .project-detail_detail .detail-content .description {
+        font-family: "Open Sans", sans-serif;
+        line-height: 1.5em;
+        font-size: 1em;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    .parallax {
+        background-image: linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+            ),
+            url("https://images.unsplash.com/photo-1508444845599-5c89863b1c44?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80");
+
+        min-height: 200px;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .parallax h1 {
+        text-align: center;
+        font-size: 2em;
+    }
+</style>
+<p class="description">
+    Cleaning of high-rise structures like the Supertrees should be performed
+    more efficiently and safely. Traditional cleaning methods are costly,
+    labour-intensive, and pose risks to workers. Existing drone-based solutions
+    also require highly skilled drone pilots. This project is intended to design
+    and prototype a tethered drone system with a unified easy-to-use user
+    interface that enables semi-autonomous aerial-ground collaboration under
+    one-man control to reduce the cost of manpower, cost of inefficiency, and
+    safety risks.
+</p>
+
+<script>
+    window.addEventListener("load", function () {
+        document
+            .getElementsByClassName("project-detail_image")[0]
+            .children[0].remove();
+        document
+            .getElementsByClassName("project-detail_image")[0]
+            .children[0].classList.remove("container_slider");
+
+        const members =
+            document.getElementsByClassName("members_row")[0].children;
+        members[5].children[0].src =
+            "/uploads/attachments/cl6577x6a0m69a3o425gc20al-jamestiotio.full.jpg";
+        const carousel =
+            document.getElementById("visitor_carousel").children[0].children[0]
+                .children;
+        carousel[5].children[0].children[0].src =
+            "/uploads/attachments/cl6577x6a0m69a3o425gc20al-jamestiotio.full.jpg";
+    });
+</script>
