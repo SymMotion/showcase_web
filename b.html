@@ -1,6 +1,7 @@
 <div class="parallax">
     <h1>Problem Area</h1>
 </div>
+
 <div class="boundary" style="padding: 10px 10px">
     <p
         style="margin-top: 12px"
@@ -13,7 +14,37 @@
 </div>
 
 <div class="parallax">
-    <h1>Features</h1>
+    <h1>Current Issues</h1>
+</div>
+
+<div class="boundary" style="padding: 10px 10px">
+    <ul style="list-style-type: circle">
+        <li
+            style="margin-top: 3px"
+            data-aos="fade-right"
+            class="aos-init aos-animate"
+        >
+            High risk of height-related accidents and fatalities.
+        </li>
+        <li
+            style="margin-top: 3px"
+            data-aos="fade-right"
+            class="aos-init aos-animate"
+        >
+            High manpower requirement with operation certification.
+        </li>
+        <li
+            style="margin-top: 3px"
+            data-aos="fade-right"
+            class="aos-init aos-animate"
+        >
+            High cost of maintenance and training.
+        </li>
+    </ul>
+</div>
+
+<div class="parallax">
+    <h1>Solution</h1>
 </div>
 
 <div
@@ -25,46 +56,18 @@
         data-aos="fade-right"
         class="aos-init aos-animate"
     >
-        Unmanned Aerial Vehicle (Drone)
+        Unmanned Aerial Vehicle (Hawk)
     </h2>
-    <p
-        style="margin-top: 12px; color: #1c1c1c"
-        data-aos="fade-right"
-        class="aos-init aos-animate"
-    >
-        We implemented a semi-autonomous navigation algorithm for the UAV using
-        several techniques.
-    </p>
-</div>
-<div
-    class="boundary"
-    style="margin-bottom: 6px; padding-bottom: 10px; padding-top: 10px"
->
-    <div style="float: left; width: 50%">
+    <div style="width: 100%">
         <img
             data-aos="fade-right"
             class="aos-init aos-animate"
-            src="https://capstone2022.sutd.edu.sg/uploads/attachments/cl61wizbs06pqa3o491k6xux7-husky.full.png"
+            src="https://capstone2022.sutd.edu.sg/uploads/attachments/cl6lxc4tt09r7avo4p3b96pkn-hawk.png"
+            style="display: block; height: auto; width: auto; margin: auto; max-height: 80vh; max-width: 80vw; padding: 0rem 4rem"
         />
     </div>
-    <div style="float: right; width: 50%">
-        <h2
-            style="color: #1c1c1c"
-            data-aos="fade-right"
-            class="aos-init aos-animate"
-        >
-            Unmanned Ground Vehicle (Husky)
-        </h2>
-        <p
-            style="margin-top: 12px; color: #1c1c1c"
-            data-aos="fade-right"
-            class="aos-init aos-animate"
-        >
-            We implemented a motion coordinator to facilitate air-ground
-            collaboration.
-        </p>
-    </div>
 </div>
+
 <div
     class="boundary"
     style="margin-bottom: 6px; padding-bottom: 10px; padding-top: 10px"
@@ -74,16 +77,22 @@
         data-aos="fade-right"
         class="aos-init aos-animate"
     >
-        Simulation
+        Unmanned Ground Vehicle (Husky)
     </h2>
-    <p
-        style="margin-top: 12px; color: #1c1c1c"
-        data-aos="fade-right"
-        class="aos-init aos-animate"
-    >
-        We implemented a simulation environment for our use case of cleaning
-        Supertrees.
-    </p>
+    <div style="width: 100%">
+        <img
+            data-aos="fade-right"
+            class="aos-init aos-animate"
+            src="https://capstone2022.sutd.edu.sg/uploads/attachments/cl61wizbs06pqa3o491k6xux7-husky.full.png"
+            style="display: block; height: auto; width: auto; margin: auto; max-height: 80vh; max-width: 80vw; padding: 0rem 4rem"
+        />
+    </div>
+</div>
+
+<div
+    class="boundary"
+    style="margin-bottom: 6px; padding-bottom: 10px; padding-top: 10px"
+>
     <h2
         style="color: #1c1c1c"
         data-aos="fade-right"
@@ -96,86 +105,178 @@
         data-aos="fade-right"
         class="aos-init aos-animate"
     >
-        We implemented a user interface to serve as a control module to be used
-        by operators.
+        The intuitive user interface allows single-person operations with operators performing one-click drone control.
+    </p>
+    <p
+        style="margin-top: 12px; color: #1c1c1c"
+        data-aos="fade-right"
+        class="aos-init aos-animate"
+    >
+        You can watch a demo of our user interface here!
+    </p>
+    <div class="video-container">
+        <iframe width="100%" style="display: block; margin: auto;" src="https://www.youtube.com/embed/61iOzyg7kQQ" title="SymMotion on YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
+<div class="parallax">
+    <h1>Features</h1>
+</div>
+
+<div class="boundary" style="padding: 10px 10px">
+    <h2
+        style="color: #1c1c1c"
+        data-aos="fade-right"
+        class="aos-init aos-animate"
+    >
+        Relative Positioning
+    </h2>
+    <p
+        style="margin-top: 12px; color: #1c1c1c"
+        data-aos="fade-left"
+        class="aos-init aos-animate"
+    >
+        ArUco markers and ultra-wideband beacons are used to determine the relative positioning of the UAV and the UGV.
+    </p>
+    <h2
+        style="color: #1c1c1c"
+        data-aos="fade-right"
+        class="aos-init aos-animate"
+    >
+        Dynamic Navigation
+    </h2>
+    <p
+        style="margin-top: 12px; color: #1c1c1c"
+        data-aos="fade-left"
+        class="aos-init aos-animate"
+    >
+        Dynamic obstacle avoidance and real-time path planning allow both the UAV and the UGV to avoid obstacles while performing their tasks.
+    </p>
+    <h2
+        style="color: #1c1c1c"
+        data-aos="fade-right"
+        class="aos-init aos-animate"
+    >
+        Simulation
+    </h2>
+    <p
+        style="margin-top: 12px; color: #1c1c1c"
+        data-aos="fade-left"
+        class="aos-init aos-animate"
+    >
+        A simulation environment for our use case of cleaning Supertrees were developed to assist with the development and testing of both the UAV and the UGV.
     </p>
 </div>
 
-<script type="module">
-    import * as THREE from 'three'
-    import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
-    import { STLLoader } from 'three/examples/jsm/loaders/STLLoader'
-    import Stats from 'three/examples/jsm/libs/stats.module'
+<div class="parallax">
+    <h1>Advantages</h1>
+</div>
 
-    const scene = new THREE.Scene()
+<div class="boundary" style="padding: 10px 10px">
+    <ul style="list-style-type: circle">
+        <li
+            style="margin-top: 3px"
+            data-aos="fade-right"
+            class="aos-init aos-animate"
+        >
+            Safer workplace operation.
+        </li>
+        <li
+            style="margin-top: 3px"
+            data-aos="fade-right"
+            class="aos-init aos-animate"
+        >
+            Reduce required man-hours by at least 85%.
+        </li>
+        <li
+            style="margin-top: 3px"
+            data-aos="fade-right"
+            class="aos-init aos-animate"
+        >
+            Decrease costs by at least 65%.
+        </li>
+        <li
+            style="margin-top: 3px"
+            data-aos="fade-right"
+            class="aos-init aos-animate"
+        >
+            Quieter operations.
+        </li>
+    </ul>
+</div>
 
-    const light = new THREE.DirectionalLight()
-    light.position.set(2.5, 7.5, 15)
-    scene.add(light)
+<div class="boundary" style="padding: 10px 10px">
+    <div
+        style="margin-top: 12px; color: #1c1c1c"
+        data-aos="fade-up"
+        class="aos-init aos-animate"
+    >
+        <div>
+            <h3 style="text-align: center; padding: 0px 0px 4rem 0rem">
+                In collaboration with:
+            </h3>
+            <div style="text-align: center;">
+                <a href="https://www.sutd.edu.sg/">
+                    <img style="max-width: 300px;" src="https://capstone2022.sutd.edu.sg/modules/my-apostrophe-assets/images/sutd-logo.png"
+                    />
+                </a>
+                <a href="https://www.spinoff.io/">
+                    <img style="max-width: 300px;" src="https://capstone2022.sutd.edu.sg/uploads/attachments/cl6lwa8zu080aavo4ffr8ybp1-spinoff.png"
+                    />
+                </a>
+                <a href="https://www.gardensbythebay.com.sg/">
+                    <img style="max-width: 300px;" src="https://capstone2022.sutd.edu.sg/uploads/attachments/cl6lwjrxg08g5avo4lzilxmjn-gardens-by-the-bay.png"
+                    />
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 
-    const camera = new THREE.PerspectiveCamera(
-        75,
-        window.innerWidth / window.innerHeight,
-        0.1,
-        1000
-    )
-    camera.position.z = 4
-
-    const renderer = new THREE.WebGLRenderer()
-    renderer.outputEncoding = THREE.sRGBEncoding
-    renderer.setSize(window.innerWidth, window.innerHeight)
-    document.body.appendChild(renderer.domElement)
-
-    const controls = new OrbitControls(camera, renderer.domElement)
-    controls.enableDamping = true
-
-    const material = new THREE.MeshPhysicalMaterial({
-        color: 0xb2ffc8,
-        metalness: 0.25,
-        roughness: 0.1,
-        opacity: 1.0,
-        transparent: true,
-        transmission: 0.99,
-        clearcoat: 1.0,
-        clearcoatRoughness: 0.25
-    })
-
-    const loader = new STLLoader()
-    loader.load(
-        'assets/hawk.stl',
-        function (geometry) {
-            const mesh = new THREE.Mesh(geometry, material)
-            scene.add(mesh)
-        },
-        (xhr) => {
-            console.log((xhr.loaded / xhr.total) * 100 + '% loaded')
-        },
-        (error) => {
-            console.log(error)
-        }
-    )
-
-    window.addEventListener('resize', onWindowResize, false)
-    function onWindowResize() {
-        camera.aspect = window.innerWidth / window.innerHeight
-        camera.updateProjectionMatrix()
-        renderer.setSize(window.innerWidth, window.innerHeight)
-        render()
-    }
-
-    const stats = Stats()
-    document.body.appendChild(stats.dom)
-
-    function animate() {
-        requestAnimationFrame(animate)
-        controls.update()
-        render()
-        stats.update()
-    }
-
-    function render() {
-        renderer.render(scene, camera)
-    }
-
-    animate()
-</script>
+<div class="boundary" style="padding: 10px 10px">
+    <div
+        style="margin-top: 12px; color: #1c1c1c"
+        data-aos="fade-up"
+        class="aos-init aos-animate"
+    >
+        <div>
+            <h3 style="text-align: center; padding: 0px 0px 4rem 0rem">
+                Powered by:
+            </h3>
+            <div style="text-align: center;">
+                <a href="https://ros.org/">
+                    <img style="max-width: 300px;" src="https://capstone2022.sutd.edu.sg/uploads/attachments/cl6lwobdv08n6avo4xocmmwyn-ros.png"
+                    />
+                </a>
+                <a href="https://px4.io/">
+                    <img style="max-width: 300px;" src="https://capstone2022.sutd.edu.sg/uploads/attachments/cl6lx0ts30955avo45eg42h8y-px4.png"
+                    />
+                </a>
+                <a href="https://gazebosim.org/">
+                    <img style="max-width: 300px;" src="https://capstone2022.sutd.edu.sg/uploads/attachments/cl6lx0tle0951avo48l6gxnd7-gazebo.png"
+                    />
+                </a>
+                <a href="https://nodejs.org/">
+                    <img style="max-width: 300px;" src="https://capstone2022.sutd.edu.sg/uploads/attachments/cl6lx0sss094uavo4fcx8psw0-nodejs.png"
+                    />
+                </a>
+                <a href="https://expressjs.com/">
+                    <img style="max-width: 300px;" src="https://capstone2022.sutd.edu.sg/uploads/attachments/cl6lx0sqb094savo4j482011a-expressjs.png"
+                    />
+                </a>
+                <a href="https://www.mongodb.com/">
+                    <img style="max-width: 300px;" src="https://capstone2022.sutd.edu.sg/uploads/attachments/cl6lx0sqr094tavo4al4orcq0-mongodb.png"
+                    />
+                </a>
+                <a href="https://socket.io/">
+                    <img style="max-width: 300px;" src="https://capstone2022.sutd.edu.sg/uploads/attachments/cl6lx0smi094qavo44p7q0b4c-socketio.png"
+                    />
+                </a>
+                <a href="https://reactjs.org/">
+                    <img style="max-width: 300px;" src="https://capstone2022.sutd.edu.sg/uploads/attachments/cl6lx0spv094ravo49eftn32n-react.png"
+                    />
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
