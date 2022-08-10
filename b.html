@@ -130,7 +130,7 @@
                     light.position.set(2.5, 7.5, 15)
                     scene.add(light)
                     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
-                    camera.position.z = 4
+                    camera.position.z = 1
                     const renderer = new THREE.WebGLRenderer()
                     renderer.outputEncoding = THREE.sRGBEncoding
                     renderer.setSize(window.innerWidth, window.innerHeight)
@@ -163,6 +163,8 @@
                         "https://corsproxy.io/?https://github.com/SymMotion/showcase_web/raw/main/assets/hawk.stl",
                         function (geometry) {
                             geometry.center()
+                            geometry.rotateX(-Math.PI / 2)
+                            geometry.rotateY(-Math.PI / 2)
                             mesh = new THREE.Mesh(geometry, material)
                             scene.add(mesh)
                             progressBar.style.display = "none"
@@ -263,7 +265,7 @@
                     light.position.set(2.5, 7.5, 15)
                     scene.add(light)
                     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
-                    camera.position.z = 4
+                    camera.position.z = 1
                     const renderer = new THREE.WebGLRenderer()
                     renderer.outputEncoding = THREE.sRGBEncoding
                     renderer.setSize(window.innerWidth, window.innerHeight)
@@ -296,6 +298,8 @@
                         "https://corsproxy.io/?https://github.com/SymMotion/showcase_web/raw/main/assets/husky.stl",
                         function (geometry) {
                             geometry.center()
+                            geometry.rotateX(-Math.PI / 2)
+                            geometry.rotateY(-Math.PI / 2)
                             mesh = new THREE.Mesh(geometry, material)
                             scene.add(mesh)
                             progressBar.style.display = "none"
