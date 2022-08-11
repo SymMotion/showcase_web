@@ -137,7 +137,7 @@
                     light.position.set(2.5, 7.5, 15)
                     scene.add(light)
                     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
-                    camera.position.z = 1
+                    camera.position.z = 50
                     const renderer = new THREE.WebGLRenderer()
                     renderer.outputEncoding = THREE.sRGBEncoding
                     renderer.setSize(window.innerWidth, window.innerHeight)
@@ -171,7 +171,7 @@
                         function (geometry) {
                             geometry.center()
                             geometry.rotateX(-Math.PI / 2)
-                            geometry.rotateY(-Math.PI / 2)
+                            geometry.rotateY(Math.PI / 4)
                             mesh = new THREE.Mesh(geometry, material)
                             scene.add(mesh)
                             progressBar.style.display = "none"
@@ -461,28 +461,28 @@
         data-aos="fade-right"
         class="aos-init aos-animate"
     >
-        Safer workplace operations.
+        <i class="fa-solid fa-helmet-safety"></i> Safer workplace operations.
     </h3>
     <h3
         style="color: #1c1c1c"
         data-aos="fade-right"
         class="aos-init aos-animate"
     >
-        Reduce required man-hours by at least 85%.
+        <i class="fa-solid fa-business-time"></i> Reduce required man-hours by at least 85%.
     </h3>
     <h3
         style="color: #1c1c1c"
         data-aos="fade-right"
         class="aos-init aos-animate"
     >
-        Decrease costs by at least 65%.
+        <i class="fa-solid fa-money-bill"></i> Decrease costs by at least 65%.
     </h3>
     <h3
         style="color: #1c1c1c"
         data-aos="fade-right"
         class="aos-init aos-animate"
     >
-        Quieter operations.
+        <i class="fa-solid fa-volume-off"></i> Quieter operations.
     </h3>
 </div>
 
@@ -490,7 +490,7 @@
     <h1>Future Work</h1>
 </div>
 
-<div class="boundary row g-4 py-5 row-cols-1 row-cols-lg-4" style="padding: 10px 10px">
+<div class="boundary" style="padding: 10px 10px">
     <div class="feature col">
         <h3
             style="color: #1c1c1c"
